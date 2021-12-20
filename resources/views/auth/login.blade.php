@@ -59,7 +59,6 @@
                                             </div>
                                             <div class="col-sm-9 offset-sm-3">
                                                 <button type="submit" class="btn btn-primary me-1">Login</button>
-                                                <a href="{{ route('register') }}" class="btn btn-outline-danger">Register</a>
                                             </div>
                                         </div>
                                     </form>

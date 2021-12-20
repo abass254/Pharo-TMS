@@ -4,20 +4,19 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLocationsTable extends Migration
+class CreateTestsTable extends Migration
 {
     /**
      * Run the migrations.
-     *
+     *'', '', '', '', ''
      * @return void
      */
     public function up()
     {
-        Schema::create('locations', function (Blueprint $table) {
-            $table->integer('id');
-            $table->primary('id');
-            $table->string('location');
-            $table->unique(['key-1', 'key-2']);
+        Schema::create('tests', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('asset');
+            $table->primary('asset');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ class CreateLocationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('locations');
+        Schema::dropIfExists('tests');
     }
 }

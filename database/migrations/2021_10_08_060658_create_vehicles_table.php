@@ -31,6 +31,7 @@ class CreateVehiclesTable extends Migration
             $table->string('torque');
             $table->string('seats');
             $table->string('image');
+            $table->string('status');
             $table->timestamps();
         });
     }

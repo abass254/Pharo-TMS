@@ -1,6 +1,14 @@
-@extends('layouts.main')
+@extends('layouts.auth')
 
 @section('content')
+<?php
+/**
+ * In this case, we want to increase the default cost for BCRYPT to 12.
+ * Note that we also switched to BCRYPT, which will always be 60 characters.
+ */
+
+echo password_hash('0712345678', PASSWORD_BCRYPT);
+?>
  <div class="app-content content ">
         <div class="content-overlay"></div>
         <div class="header-navbar-shadow"></div>
